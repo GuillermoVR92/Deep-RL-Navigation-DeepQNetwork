@@ -4,17 +4,20 @@ Guillermo del Valle Reboul
 
 ## Project details
 
-The goal of the agent is to collect as much `yellow` bananas as possible while avoiding the `blue` ones.
+### Introduction
 
-Unity brain name: BananaBrain
-Number of Visual Observations (per agent): 0
-Vector Observation space type: continuous
-Vector Observation space size (per agent): 37
-Number of stacked Vector Observation: 1
-Vector Action space type: discrete
-Vector Action space size (per agent): 4
-Vector Action descriptions: , , , 
+For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
 
+A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
+
+- **`0`** - move forward.
+- **`1`** - move backward.
+- **`2`** - turn left.
+- **`3`** - turn right.
+
+The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 state vector = 37 continous values
 actions = 4 discrete actions (forward, backward, turn left, turn right)
